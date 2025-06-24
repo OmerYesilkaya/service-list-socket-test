@@ -20,10 +20,8 @@ function createSocket(token) {
 
 export default function App() {
     const socketRef = useRef(null);
-    const [token, setToken] = useState(
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJiY2E0YmY5OWJkNzc0YTU2YmY5NGQyZWYyMjYyYTIwMyIsInVzZXJJZCI6IjE5NjU4MmIyLWVlZGItNGJkZi1hMzkwLTMyMWZlYWZiZWRjZCIsImVtYWlsIjoib21lci55ZXNpbGtheWFAaGV4YXdvcmtzLmNvbSIsImxvZ2luRGF0ZSI6IjIwMjUtMDYtMjRUMTE6NTQ6NTkuMDU4WiIsImlhdCI6MTc1MDc2NjA5OX0.mbIhwr58STeLEFWe4XPUwT4Dizua8MFZNeRI23WPBxM"
-    );
-    const [projectId, setProjectId] = useState("197a3985-b515-4423-bbde-2c3d21e825d5");
+    const [token, setToken] = useState("");
+    const [projectId, setProjectId] = useState("");
     const [message, setMessage] = useState("No connection established yet...");
     const [serviceList, setServiceList] = useState([]);
 
